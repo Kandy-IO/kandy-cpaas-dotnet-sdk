@@ -1,0 +1,23 @@
+# build
+[Bb]in/
+[Oo]bj/
+*.nupkg
+
+scriptcs_bin
+
+# user
+*.user
+*.userprefs
+.vs
+
+project.lock.json
+
+.DS_Store
+.idea/
+.pdb
+.dll
+Test
+log.txt
+packages/
+.env
+mono_crash*

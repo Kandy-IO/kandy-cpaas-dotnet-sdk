@@ -1,0 +1,17 @@
+﻿<html>
+<head>
+    <title> 2FA</title >
+    <link rel="stylesheet" type="text/css" href="/Content/stylesheets/main.css">
+</head>
+<body>
+    @if (Model != null && Model.Message != null) {
+        <div class="alert alert-@(Model.Type)">
+            <p>@Model.Message</p>
+        </div>
+    }
+    <form action="/logout" method="get" class="box centered-box">
+        <p> You are now logged in.</p>
+        <button type="submit"> Logout</button>
+    </form>
+</body>
+</html>

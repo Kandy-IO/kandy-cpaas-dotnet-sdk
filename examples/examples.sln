@@ -1,0 +1,49 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2fa", "2fa\2fa.csproj", "{877BB47E-881D-43BA-9AE0-C95B47413941}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sms", "sms\sms.csproj", "{9EACB172-44C4-4FA5-AE45-365AE9304F97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{877BB47E-881D-43BA-9AE0-C95B47413941}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{877BB47E-881D-43BA-9AE0-C95B47413941}.Debug|anycpu.Build.0 = Debug|anycpu
+		{877BB47E-881D-43BA-9AE0-C95B47413941}.Release|anycpu.ActiveCfg = Release|anycpu
+		{877BB47E-881D-43BA-9AE0-C95B47413941}.Release|anycpu.Build.0 = Release|anycpu
+		{9EACB172-44C4-4FA5-AE45-365AE9304F97}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{9EACB172-44C4-4FA5-AE45-365AE9304F97}.Debug|anycpu.Build.0 = Debug|anycpu
+		{9EACB172-44C4-4FA5-AE45-365AE9304F97}.Release|anycpu.ActiveCfg = Release|anycpu
+		{9EACB172-44C4-4FA5-AE45-365AE9304F97}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.FileWidth = 80
+		$1.TabWidth = 2
+		$1.TabsToSpaces = True
+		$1.IndentWidth = 2
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.NewLinesForBracesInTypes = False
+		$2.NewLinesForBracesInMethods = False
+		$2.NewLinesForBracesInProperties = False
+		$2.NewLinesForBracesInAccessors = False
+		$2.NewLinesForBracesInAnonymousMethods = False
+		$2.NewLinesForBracesInControlBlocks = False
+		$2.NewLinesForBracesInAnonymousTypes = False
+		$2.NewLinesForBracesInObjectCollectionArrayInitializers = False
+		$2.NewLinesForBracesInLambdaExpressionBody = False
+		$2.NewLineForElse = False
+		$2.NewLineForCatch = False
+		$2.NewLineForFinally = False
+		$2.scope = text/x-csharp
+		$2.LabelPositioning = NoIndent
+		$0.DotNetNamingPolicy = $3
+		$3.DirectoryNamespaceAssociation = PrefixedHierarchical
+	EndGlobalSection
+EndGlobal
