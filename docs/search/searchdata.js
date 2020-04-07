@@ -4,7 +4,7 @@ var indexSectionsWithContent =
   1: "cdnst",
   2: "c",
   3: "cdgprsuv",
-  4: "l"
+  4: "dl"
 };
 
 var indexSectionNames =

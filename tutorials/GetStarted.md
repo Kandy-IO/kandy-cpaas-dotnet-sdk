@@ -1,12 +1,12 @@
 # Get Started
 
-In this quickstart, we will help you dip your toes in before you dive in. This guide will help you get started with the $KANDY$ C# SDK.
+In this quickstart, we will help you dip your toes in before you dive in. This guide will help you get started with the $KANDY$ C#/.Net SDK.
 
 ## Using the SDK
 
 To install the C# client library using NuGet:
 - Run the following command in the Package Manager Console:
-```xml
+```
 Install-Package Cpaas.Sdk
 ```
 
@@ -41,7 +41,7 @@ using Cpaas.Sdk;
 var client = new Client(
   "clientId <Private Project key>",
   "clientSecret <Private Project secret>",
-  "$KANDYFQDN$"
+  "https://$KANDYFQDN$"
 );
 ```
 
@@ -62,14 +62,9 @@ Every module method returns a class object of the module.
 Example
 
 ```csharp
-using Cpaas.Sdk;
-
-Twofactor response = client.twofactor.SendCode("+12065361739", new Dictionary<string, string> {
+var response = client.twofactor.SendCode("+12065361739", new Dictionary<string, string> {
   ["message"] = "Test {code}",
 });
-
-response.hasError; // true if error present, false if not
-response.codeId; // codeId of the 2FA sent.
 ```
 
 ## Default Error Response

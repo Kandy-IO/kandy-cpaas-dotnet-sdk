@@ -917,7 +917,7 @@ RECURSIVE              = YES
 # Note that relative paths are relative to the directory from which doxygen is
 # run.
 
-EXCLUDE                = Cpaas.Sdk.Test Test tutorials examples packages Cpaas.Sdk/Api.cs Cpaas.Sdk/Util.cs Cpaas.Sdk/Config.cs README.md Cpaas.Sdk/resources/BaseResponse.cs Cpaas.Sdk/resources/NotificationChannel.cs
+EXCLUDE                = Cpaas.Sdk.Test Test tutorials examples packages Cpaas.Sdk/Api.cs Cpaas.Sdk/Util.cs Cpaas.Sdk/Config.cs README.md Cpaas.Sdk/resources/BaseResponse.cs Cpaas.Sdk/resources/NotificationChannel.cs developer-notes.md CHANGELOG.md
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
 # directories that are symbolic links (a Unix file system feature) are excluded

@@ -191,9 +191,9 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramname">destinationAddress</td><td><b>string | Array&lt;string&gt;</b> Indicates which DID number(s) used as destination for this SMS. </td></tr>
     <tr><td class="paramname">values</td><td><b>Dictionary&lt;string, string&gt;</b> A dictionary to hold all parameters. <ul>
 <li>
-<code>values["type"]</code> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options  </li>
+<code>values["type"]</code> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options  </li>
 <li>
-<code>values["senderAddress"]</code> <b>string</b> Sender address information, basically the from address. E164 formatted DID number passed as a value, which is owned by the user. If the user wants to let CPaaS uses the default assigned DID number, this field can either has "default" value or the same value as the userId.  </li>
+<code>values["senderAddress"]</code> <b>string</b> Sender address information, basically the from address. E164 formatted DID number passed as a value, which is owned by the user. If the user wants to let CPaaS uses the default assigned DID number, then this field should have "default" as it's value.  </li>
 <li>
 <code>values["message"]</code> <b>string</b> SMS text message.  </li>
 </ul>
@@ -234,7 +234,7 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">values</td><td><b>Dictionary&lt;string, string&gt;</b> A dictionary to hold all parameters. <ul>
 <li>
-<code>values["type"]</code> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options  </li>
+<code>values["type"]</code> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options  </li>
 <li>
 <code>values["remoteAddress"]</code> <b>string</b> Remote address information while retrieving the conversation history, basically the destination telephone number that user exchanged message before. E164 formatted DID number passed as a value.  </li>
 <li>
@@ -288,7 +288,7 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">values</td><td><b>Dictionary&lt;string, string&gt;</b> A dictionary to hold all parameters. <ul>
 <li>
-<code>values["type"]</code> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options  </li>
+<code>values["type"]</code> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options  </li>
 <li>
 <code>values["remoteAddress"]</code> <b>string</b> Remote address information while retrieving the conversation history, basically the destination telephone number that user exchanged message before. E164 formatted DID number passed as a value.  </li>
 <li>
@@ -359,7 +359,7 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">values</td><td><b>Dictionary&lt;string, string&gt;</b> A dictionary to hold all parameters. <ul>
 <li>
-<code>values["type"]</code> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options  </li>
+<code>values["type"]</code> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options  </li>
 <li>
 <code>values["remoteAddress"]</code> <b>string</b> <em>Optional</em> Remote address information while retrieving the conversation history, basically the destination telephone number that user exchanged message before. E164 formatted DID number passed as a value.  </li>
 <li>
@@ -428,7 +428,7 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">values</td><td><b>Dictionary&lt;string, string&gt;</b> A dictionary to hold all parameters. <ul>
 <li>
-<code>values["type"]</code> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options  </li>
+<code>values["type"]</code> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options  </li>
 <li>
 <code>values["remoteAddress"]</code> <b>string</b> Remote address information while retrieving the conversation history, basically the destination telephone number that user exchanged message before. E164 formatted DID number passed as a value.  </li>
 <li>
@@ -470,7 +470,7 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">values</td><td><b>Dictionary&lt;string, string&gt;</b> A dictionary to hold all parameters. <ul>
 <li>
-<code>values["type"]</code> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options  </li>
+<code>values["type"]</code> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options  </li>
 <li>
 <code>values["subscriptionId"]</code> <b>string</b> Resource ID of the subscription.  </li>
 </ul>
@@ -510,7 +510,7 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">values</td><td><b>Dictionary&lt;string, string&gt;</b> A dictionary to hold all parameters. <ul>
 <li>
-<code>values["type"]</code> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options  </li>
+<code>values["type"]</code> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options  </li>
 </ul>
 </td></tr>
   </table>
@@ -548,9 +548,9 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">values</td><td><b>Dictionary&lt;string, string&gt;</b> A dictionary to hold all parameters. <ul>
 <li>
-<code>values["type"]</code> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options  </li>
+<code>values["type"]</code> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options  </li>
 <li>
-<code>values["webhookURL"]</code> <b>string</b> The webhook that has been acquired during SMS API subscription, which the incoming notifications supposed to be sent to.  </li>
+<code>values["webhookURL"]</code> <b>string</b> HTTPS URL that is present in your application server which is accessible from the public web where the notifications should be sent to. Note: Should be a POST endpoint.  </li>
 <li>
 <code>values["destinationAddress"]</code> <b>string</b> <em>Optional</em> The address that incoming messages are received for this subscription. If does not exist, CPaaS uses the default assigned DID number to subscribe against. It is suggested to provide the intended E164 formatted DID number within this parameter.  </li>
 </ul>
@@ -590,7 +590,7 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">values</td><td><b>Dictionary&lt;string, string&gt;</b> A dictionary to hold all parameters. <ul>
 <li>
-<code>values["type"]</code> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options  </li>
+<code>values["type"]</code> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options  </li>
 <li>
 <code>values["subscriptionId"]</code> <b>string</b> Resource ID of the subscription  </li>
 </ul>

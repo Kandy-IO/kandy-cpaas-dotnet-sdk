@@ -23,6 +23,10 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "CPaaS C# SDK", "index.html", [
+    [ "Developer note", "md_developer-note.html", [
+      [ "To generate docs", "md_developer-note.html#autotoc_md1", null ],
+      [ "Versioning", "md_developer-note.html#autotoc_md2", null ]
+    ] ],
     [ "LICENSE", "md__l_i_c_e_n_s_e.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]

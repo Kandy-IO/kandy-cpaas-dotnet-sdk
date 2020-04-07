@@ -83,10 +83,10 @@ namespace Cpaas.Sdk.resources {
     ///   A dictionary to hold all parameters.
     ///   <list type="bullet">
     ///     <item>
-    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options
+    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options
     ///     </item>
     ///     <item>
-    ///       <c>values["senderAddress"]</c> <b>string</b> Sender address information, basically the from address. E164 formatted DID number passed as a value, which is owned by the user. If the user wants to let CPaaS uses the default assigned DID number, this field can either has "default" value or the same value as the userId.
+    ///       <c>values["senderAddress"]</c> <b>string</b> Sender address information, basically the from address. E164 formatted DID number passed as a value, which is owned by the user. If the user wants to let CPaaS uses the default assigned DID number, then this field should have "default" as it's value.
     ///     </item>
     ///     <item>
     ///       <c>values["message"]</c> <b>string</b> SMS text message.
@@ -151,7 +151,7 @@ namespace Cpaas.Sdk.resources {
     ///   A dictionary to hold all parameters.
     ///   <list type="bullet">
     ///     <item>
-    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options
+    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options
     ///     </item>
     ///     <item>
     ///       <c>values["remoteAddress"]</c> <b>string</b> <i>Optional</i> Remote address information while retrieving the conversation history, basically the destination telephone number that user exchanged message before. E164 formatted DID number passed as a value.
@@ -248,7 +248,7 @@ namespace Cpaas.Sdk.resources {
     ///   A dictionary to hold all parameters.
     ///   <list type="bullet">
     ///     <item>
-    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options
+    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options
     ///     </item>
     ///     <item>
     ///       <c>values["remoteAddress"]</c> <b>string</b> Remote address information while retrieving the conversation history, basically the destination telephone number that user exchanged message before. E164 formatted DID number passed as a value.
@@ -294,7 +294,7 @@ namespace Cpaas.Sdk.resources {
     ///   A dictionary to hold all parameters.
     ///   <list type="bullet">
     ///     <item>
-    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options
+    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options
     ///     </item>
     ///     <item>
     ///       <c>values["remoteAddress"]</c> <b>string</b> Remote address information while retrieving the conversation history, basically the destination telephone number that user exchanged message before. E164 formatted DID number passed as a value.
@@ -375,7 +375,7 @@ namespace Cpaas.Sdk.resources {
     ///   A dictionary to hold all parameters.
     ///   <list type="bullet">
     ///     <item>
-    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options
+    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options
     ///     </item>
     ///     <item>
     ///       <c>values["remoteAddress"]</c> <b>string</b> Remote address information while retrieving the conversation history, basically the destination telephone number that user exchanged message before. E164 formatted DID number passed as a value.
@@ -415,7 +415,7 @@ namespace Cpaas.Sdk.resources {
     ///   A dictionary to hold all parameters.
     ///   <list type="bullet">
     ///     <item>
-    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options
+    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options
     ///     </item>
     ///   </list>
     /// </param>
@@ -451,7 +451,7 @@ namespace Cpaas.Sdk.resources {
     ///   A dictionary to hold all parameters.
     ///   <list type="bullet">
     ///     <item>
-    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options
+    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options
     ///     </item>
     ///     <item>
     ///       <c>values["subscriptionId"]</c> <b>string</b> Resource ID of the subscription.
@@ -485,10 +485,10 @@ namespace Cpaas.Sdk.resources {
     ///   A dictionary to hold all parameters.
     ///   <list type="bullet">
     ///     <item>
-    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options
+    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options
     ///     </item>
     ///     <item>
-    ///       <c>values["webhookURL"]</c> <b>string</b> The webhook that has been acquired during SMS API subscription, which the incoming notifications supposed to be sent to.
+    ///       <c>values["webhookURL"]</c> <b>string</b> HTTPS URL that is present in your application server which is accessible from the public web where the notifications should be sent to. Note: Should be a POST endpoint.
     ///     </item>
     ///     <item>
     ///       <c>values["destinationAddress"]</c> <b>string</b> <i>Optional</i> The address that incoming messages are received for this subscription. If does not exist, CPaaS uses the default assigned DID number to subscribe against. It is suggested to provide the intended E164 formatted DID number within this parameter.
@@ -540,7 +540,7 @@ namespace Cpaas.Sdk.resources {
     ///   A dictionary to hold all parameters.
     ///   <list type="bullet">
     ///     <item>
-    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible values - SMS. Check conversation.types for more options
+    ///       <c>values["type"]</c> <b>string</b> Type of conversation. Possible value(s) - sms. Check conversation.types for more options
     ///     </item>
     ///     <item>
     ///       <c>values["subscriptionId"]</c> <b>string</b> Resource ID of the subscription

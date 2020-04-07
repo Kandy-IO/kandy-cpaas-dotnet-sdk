@@ -18,7 +18,7 @@ namespace Cpaas.Sdk {
   /// </example>
   ///
   ///
-  /// <param name="clientId"> <b>String</b> Private project secret </param>
+  /// <param name="clientId"> <b>String</b> Private project key </param>
   /// <param name="clientSecret"> <b>String</b> Private project secret </param>
   /// <param name="baseUrl"> <b>String</b> URL of the server to be used.</param>
   ///
