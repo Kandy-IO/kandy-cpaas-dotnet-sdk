@@ -11,8 +11,11 @@ namespace sms {
 
       using (var host = new NancyHost(new Uri(uri))) {
         host.Start();
-        string path = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), @"../../"));
-        DotEnv.Config(true, $"{path}/.env");
+        var isUnixFS = Path.GetPathRoot(Directory.GetCurrentDirectory()) == @"/";
+        var upPath = isUnixFS ? @"../../" : @"..\..\";
+        string path = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), upPath));
+        string dotenvpath = isUnixFS ? $"{path}/.env" : $"{path}\\.env";
+        DotEnv.Config(true, dotenvpath);
         Console.WriteLine("NancyFX Stand alone test application.");
         Console.WriteLine($"Listening on {uri}");
         Console.WriteLine("Press enter to exit the application");
