@@ -1,6 +1,6 @@
 # Get Started
 
-In this quickstart, we will help you dip your toes in before you dive in. This guide will help you get started with the $KANDY$ C#/.Net SDK.
+In this quickstart, we will help you dip your toes in before you dive in. This guide will help you get started with the $KANDY$ C#/.NET SDK.
 
 ## Using the SDK
 
