@@ -9,9 +9,9 @@ scriptcs_bin
 *.user
 *.userprefs
 .vs
+.vscode
 
 project.lock.json
-
 .DS_Store
 .idea/
 .pdb
