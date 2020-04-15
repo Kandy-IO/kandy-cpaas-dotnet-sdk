@@ -18,7 +18,7 @@ namespace Cpaas.Sdk.resources {
       public string message = null;
       public string senderAddress = null;
       public string destinationAddress = null;
-      public Dictionary<string, string> eventDetails = null;
+      public Dictionary<string, string> eventDetails;
     }
 
     ///
@@ -65,16 +65,17 @@ namespace Cpaas.Sdk.resources {
         notificationResponse.notificationType = "subscriptionCancel";
         notificationResponse.notificationId = (string)obj["id"];
         notificationResponse.notificationDateTime = (long)obj["dateTime"];
-        notificationResponse.subscriptionId = Util.IdFrom((string)obj["links"][0]["href"]);
+        notificationResponse.subscriptionId = Util.IdFrom((string)obj["link"][0]["href"]);
       }
 
       if (notification.ContainsKey("smsEventNotification")) {
         obj = (JObject)notification["smsEventNotification"];
+        notificationResponse.eventDetails = new Dictionary<string, string>();
 
         notificationResponse.notificationType = "event";
         notificationResponse.notificationId = (string)obj["id"];
         notificationResponse.notificationDateTime = (long)obj["dateTime"];
-        notificationResponse.subscriptionId = Util.IdFrom((string)obj["links"][0]["href"]);
+        notificationResponse.subscriptionId = Util.IdFrom((string)obj["link"][0]["href"]);
         notificationResponse.eventDetails.Add("eventDescription", (string)obj["eventDescription"]);
         notificationResponse.eventDetails.Add("eventType", (string)obj["eventType"]);
       }
