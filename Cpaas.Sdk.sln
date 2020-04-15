@@ -53,5 +53,8 @@ Global
 		$2.NewLineForElse = False
 		$2.NewLineForCatch = False
 		$2.NewLineForFinally = False
+		$0.DotNetNamingPolicy = $3
+		$3.DirectoryNamespaceAssociation = PrefixedHierarchical
+		version = 1.0.0
 	EndGlobalSection
 EndGlobal
