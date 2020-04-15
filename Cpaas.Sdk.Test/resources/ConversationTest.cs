@@ -45,7 +45,7 @@ namespace Cpaas.Sdk.Test.resources {
 
       server
         .Post(url)
-        .Responds(ConversationStub.CreateMessageResponse());
+        .Responds(ConversationStub.createMessageResponse);
 
       var response = conversation.CreateMessage(destinationAddress, requestParams);
       var request = response.ires.Request;
@@ -63,7 +63,7 @@ namespace Cpaas.Sdk.Test.resources {
 
       server
         .Get(url)
-        .Responds(ConversationStub.SmsThreadList());
+        .Responds(ConversationStub.smsThreadList);
 
       var response = conversation.GetMessagesInThread(requestParams);
       var request = response.ires.Request;
@@ -83,7 +83,7 @@ namespace Cpaas.Sdk.Test.resources {
 
       server
         .Get(url)
-        .Responds(ConversationStub.SmsThreadList());
+        .Responds(ConversationStub.smsThreadList);
 
       var response = conversation.GetMessagesInThread(requestParams);
       var request = response.ires.Request;
@@ -105,7 +105,7 @@ namespace Cpaas.Sdk.Test.resources {
 
       server
         .Get(url)
-        .Responds(ConversationStub.SmsThread());
+        .Responds(ConversationStub.smsThread);
 
       var response = conversation.GetMessagesInThread(requestParams);
       var request = response.ires.Request;
@@ -148,7 +148,7 @@ namespace Cpaas.Sdk.Test.resources {
 
       server
         .Get(url)
-        .Responds(ConversationStub.Messages());
+        .Responds(ConversationStub.messages);
 
       var response = conversation.GetMessages(requestParams);
       var request = response.ires.Request;
@@ -172,7 +172,7 @@ namespace Cpaas.Sdk.Test.resources {
 
       server
         .Get(url)
-        .Responds(ConversationStub.Message());
+        .Responds(ConversationStub.message);
 
       var response = conversation.GetMessages(requestParams);
       var request = response.ires.Request;
@@ -196,7 +196,7 @@ namespace Cpaas.Sdk.Test.resources {
 
       server
         .Get(url)
-        .Responds(ConversationStub.Status());
+        .Responds(ConversationStub.status);
 
       var response = conversation.GetStatus(requestParams);
       var request = response.ires.Request;
@@ -214,7 +214,7 @@ namespace Cpaas.Sdk.Test.resources {
 
       server
         .Get(url)
-        .Responds(ConversationStub.Subscriptions());
+        .Responds(ConversationStub.subscriptions);
 
       var response = conversation.GetSubscriptions(requestParams);
       var request = response.ires.Request;
@@ -234,7 +234,7 @@ namespace Cpaas.Sdk.Test.resources {
 
       server
         .Get(url)
-        .Responds(ConversationStub.Subscription());
+        .Responds(ConversationStub.subscription);
 
       var response = conversation.GetSubscription(requestParams);
       var request = response.ires.Request;

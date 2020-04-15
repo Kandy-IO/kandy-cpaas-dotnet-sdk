@@ -10,7 +10,7 @@ namespace Cpaas.Sdk.Test.resources {
     [Test]
     public void Parse_Should_Return_ValidOutboundNotification() {
       var notification = new Notification();
-      var notificationString = NotificationStub.OutboundNotification();
+      var notificationString = NotificationStub.outboundNotification;
       var response = notification.Parse(notificationString);
       var notificationObj = JObject.Parse(notificationString);
       var obj = notificationObj["outboundSMSMessageNotification"]["outboundSMSMessage"];
@@ -27,7 +27,7 @@ namespace Cpaas.Sdk.Test.resources {
     [Test]
     public void Parse_Should_Return_ValidInboundNotification() {
       var notification = new Notification();
-      var notificationString = NotificationStub.InboundNotification();
+      var notificationString = NotificationStub.inboundNotification;
       var response = notification.Parse(notificationString);
       var notificationObj = JObject.Parse(notificationString);
       var obj = notificationObj["inboundSMSMessageNotification"]["inboundSMSMessage"];
@@ -44,7 +44,7 @@ namespace Cpaas.Sdk.Test.resources {
     [Test]
     public void Parse_Should_Return_ValidSubscriptionCancelNotification() {
       var notification = new Notification();
-      var notificationString = NotificationStub.SubCancelNotification();
+      var notificationString = NotificationStub.subCancelNotification;
       var response = notification.Parse(notificationString);
       var notificationObj = JObject.Parse(notificationString);
       var obj = notificationObj["smsSubscriptionCancellationNotification"];
@@ -58,7 +58,7 @@ namespace Cpaas.Sdk.Test.resources {
     [Test]
     public void Parse_Should_Return_ValidEventNotification() {
       var notification = new Notification();
-      var notificationString = NotificationStub.EventNotification();
+      var notificationString = NotificationStub.eventNotification;
       var response = notification.Parse(notificationString);
       var notificationObj = JObject.Parse(notificationString);
       var obj = notificationObj["smsEventNotification"];

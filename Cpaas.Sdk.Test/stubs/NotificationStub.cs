@@ -2,8 +2,7 @@ using System;
 
 namespace Cpaas.Sdk.Test.stubs {
   public class NotificationStub {
-    public static string OutboundNotification() {
-      return @"
+    public static string outboundNotification = @"
         {
           ""outboundSMSMessageNotification"": {
             ""outboundSMSMessage"": {
@@ -18,9 +17,8 @@ namespace Cpaas.Sdk.Test.stubs {
           }
         }
       ";
-    }
-    public static string InboundNotification() {
-      return @"
+
+    public static string inboundNotification = @"
         {
           ""inboundSMSMessageNotification"": {
             ""inboundSMSMessage"": {
@@ -35,9 +33,8 @@ namespace Cpaas.Sdk.Test.stubs {
           }
         }
       ";
-    }
-    public static string EventNotification() {
-      return @"
+
+    public static string eventNotification = @"
         {
           ""smsEventNotification"": {
             ""eventDescription"": ""A message has been deleted."",
@@ -53,9 +50,8 @@ namespace Cpaas.Sdk.Test.stubs {
           }
         }
       ";
-    }
-    public static string SubCancelNotification() {
-      return @"
+
+    public static string subCancelNotification = @"
         {
           ""smsSubscriptionCancellationNotification"": {
             ""link"": [
@@ -69,6 +65,5 @@ namespace Cpaas.Sdk.Test.stubs {
           }
         }
       ";
-    }
   }
 }

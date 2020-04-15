@@ -2,8 +2,7 @@
 
 namespace Cpaas.Sdk.Test.stubs {
   public class ConversationStub {
-    public static string CreateMessageResponse() {
-      return @"
+    public static string createMessageResponse = @"
         {
           ""outboundSMSMessageRequest"": {
             ""address"": [
@@ -27,10 +26,8 @@ namespace Cpaas.Sdk.Test.stubs {
           }
         }
       ";
-    }
 
-    public static string SmsThread() {
-      return @"
+    public static string smsThread = @"
         {
           ""smsThread"": {
             ""remoteAddress"": ""+12013000103"",
@@ -47,10 +44,8 @@ namespace Cpaas.Sdk.Test.stubs {
           }
         }
       ";
-    }
 
-    public static string SmsThreadList() {
-      return @"
+    public static string smsThreadList = @"
         {
           ""smsThreadList"": {
             ""smsThread"": [
@@ -85,10 +80,8 @@ namespace Cpaas.Sdk.Test.stubs {
           }
         }
       ";
-    }
 
-    public static string Messages() {
-      return @"
+    public static string messages = @"
         {
           ""smsMessageList"": {
             ""smsMessage"": [
@@ -113,9 +106,8 @@ namespace Cpaas.Sdk.Test.stubs {
           }
         }
       ";
-    }
-    public static string Message() {
-      return @"
+
+    public static string message = @"
         {
           ""smsMessage"": {
             ""type"": ""Outbound"",
@@ -127,18 +119,14 @@ namespace Cpaas.Sdk.Test.stubs {
           }
         }
       ";
-    }
 
-    public static string Status() {
-      return @"
+    public static string status = @"
         {
           ""status"": ""DeliveredToTerminal""
         }
       ";
-    }
 
-    public static string Subscription() {
-      return @"
+    public static string subscription = @"
         {
           ""subscription"": {
             ""callbackReference"": {
@@ -150,10 +138,8 @@ namespace Cpaas.Sdk.Test.stubs {
           }
         }
       ";
-    }
 
-    public static string Subscriptions() {
-      return @"
+    public static string subscriptions = @"
         {
           ""subscriptionList"": {
             ""resourceURL"": ""/cpaas/smsmessaging/v1/e33c51d7-6585-4aee-88ae-005dfae1fd3b/inbound/subscriptions"",
@@ -178,6 +164,5 @@ namespace Cpaas.Sdk.Test.stubs {
           }
         }
       ";
-    }
   }
 }

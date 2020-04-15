@@ -50,7 +50,7 @@ namespace Cpaas.Sdk.Test.resources {
 
       server
         .Post(url)
-        .Responds(TwofactorStub.CodeResponse());
+        .Responds(TwofactorStub.codeResponse);
 
       var response = twofactor.SendCode(destinationAddress, requestParams);
       var request = response.ires.Request;
@@ -90,7 +90,7 @@ namespace Cpaas.Sdk.Test.resources {
 
       server
         .Put(url)
-        .Responds(TwofactorStub.CodeResponse());
+        .Responds(TwofactorStub.codeResponse);
 
       var response = twofactor.ResendCode(destinationAddress, requestParams);
       var request = response.ires.Request;
