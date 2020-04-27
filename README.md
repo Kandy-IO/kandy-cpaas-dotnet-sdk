@@ -1,6 +1,6 @@
-# Cpaas.Sdk
+# Kandy CPaaS .NET SDK
 
-## Installation
+## Install
 
 Install the package with:
 
@@ -12,6 +12,11 @@ Install-Package Cpaas.Sdk
 
 The information about tutorials and documents can be found in the links below
 
-* `Documents`: [docs](https://kandy-io.github.io/kandy-cpaas-dotnet-sdk/docs)
+* `Documents`: [API Docs](https://kandy-io.github.io/kandy-cpaas-dotnet-sdk/docs)
 
-* `Tutorials`:  [Get Started](https://kandy-io.github.io/kandy-cpaas-dotnet-sdk/tutorials/?KANDY=Kandy&KANDYFQDN=oauth-cpaas.att.com#/GetStarted)
+* `Tutorials`:  [User Guide](https://kandy-io.github.io/kandy-cpaas-dotnet-sdk/tutorials/?KANDY=Kandy&KANDYFQDN=oauth-cpaas.att.com#/GetStarted)
+
+## Compatibility
+- 4.5.2 or higher
+- .NET Standard 2.0
+- .NET Core 3.0 or higher
