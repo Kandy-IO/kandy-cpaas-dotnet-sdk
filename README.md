@@ -8,7 +8,7 @@ Install the package with:
 Install-Package Cpaas.Sdk
 ```
 
-## Reference
+## Documentation
 
 The information about tutorials and documents can be found in the links below
 
