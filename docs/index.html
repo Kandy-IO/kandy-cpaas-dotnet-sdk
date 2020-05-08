@@ -86,15 +86,26 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Configure the SDK with clientId and clientSecret. </p>
-<div class="fragment"><div class="line"> Client client = <span class="keyword">new</span> Client(</div>
-<div class="line">  <span class="stringliteral">&quot;private project key&quot;</span>,</div>
-<div class="line">  <span class="stringliteral">&quot;private project secret&quot;</span>,</div>
-<div class="line">  <span class="stringliteral">&quot;base url&quot;</span></div>
-<div class="line">);</div>
+<div class="fragment"><div class="line">  Client client = <span class="keyword">new</span> Client(</div>
+<div class="line">   <span class="stringliteral">&quot;private project key&quot;</span>,</div>
+<div class="line">   <span class="stringliteral">&quot;private project secret&quot;</span>,</div>
+<div class="line">   <span class="stringliteral">&quot;base url&quot;</span></div>
+<div class="line"> );</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// or</span></div>
+<div class="line"> </div>
+<div class="line">  Client client = <span class="keyword">new</span> Client(</div>
+<div class="line">   <span class="stringliteral">&quot;account client ID&quot;</span>,</div>
+<div class="line">   <span class="stringliteral">&quot;account email&quot;</span>,</div>
+<div class="line">   <span class="stringliteral">&quot;account password&quot;</span>,</div>
+<div class="line">   <span class="stringliteral">&quot;base url&quot;</span></div>
+<div class="line"> );</div>
 </div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">clientId</td><td><b>String</b> Private project key </td></tr>
-    <tr><td class="paramname">clientSecret</td><td><b>String</b> Private project secret </td></tr>
+    <tr><td class="paramname">clientId</td><td><b>String</b> Private project key / Account client ID. If Private project key is used then client_secret is mandatory. If account client ID is used then email and password are mandatory. </td></tr>
+    <tr><td class="paramname">clientSecret</td><td><b>String</b> <em>Optional</em> Private project secret </td></tr>
+    <tr><td class="paramname">email</td><td><b>String</b> <em>Optional</em> Account login email. </td></tr>
+    <tr><td class="paramname">password</td><td><b>String</b> <em>Optional</em> Account login password. </td></tr>
     <tr><td class="paramname">baseUrl</td><td><b>String</b> URL of the server to be used.</td></tr>
   </table>
   </dd>

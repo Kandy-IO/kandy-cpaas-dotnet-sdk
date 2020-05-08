@@ -25,23 +25,38 @@ After you've created your instance of the SDK, you can begin playing around with
 ## Configuration
 Before starting, you need to learn following information from your CPaaS account, specifically from Developer Portal.
 
-Log into your Developer Portal account and the configuration information required to be authenticated should be under:
+If you want to authenticate using CPaaS account's credentials, the configuration information required should be under:
+
++ `Home` -> `Personal Profile` (top right corner) -> `Details`
+> + `Account client ID` should be mapped to `clientId`
+> + `Email` should be mapped to `email`
+> + Your account password should be mapped to `password`
+
+Alternatively if you want to use your project's credentials, the configuration information required should be under:
 
 + `Projects` -> `{your project}` -> `Project info`/`Project secret`
-
 > + `Private Project key` should be mapped to `clientId`
 > + `Private Project secret` should be mapped to `clientSecret`
 
-Instantiating the library can be done by providing a configuration object to the library factory as shown below.
+Create a client instance by passing the configuration object to the modules client object as shown below.
 
 ```csharp
 using Cpaas.Sdk;
 
 // Initialize
 var client = new Client(
-  "clientId <Private Project key>",
-  "clientSecret <Private Project secret>",
-  "https://$KANDYFQDN$"
+  "<Private Project key>", // clientId
+  "<Private Project secret>", // clientSecret
+  "https://$KANDYFQDN$" // baseUrl
+);
+
+// or
+
+var client = new Client(
+  "<Account client ID>", // clientId
+  "<Account email>", // email
+  "<Account password>", // password
+  "https://$KANDYFQDN$" // baseUrl
 );
 ```
 

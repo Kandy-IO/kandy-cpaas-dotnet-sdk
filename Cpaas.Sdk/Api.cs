@@ -19,7 +19,6 @@ namespace Cpaas.Sdk {
 			this.config = config;
 			this.client = new RestClient(config.baseUrl);
 
-      if (!String.IsNullOrEmpty(config.clientId) && !String.IsNullOrEmpty(config.clientSecret))
 			AuthToken();
     }
 
@@ -120,14 +119,23 @@ namespace Cpaas.Sdk {
 
 		JObject GetTokens() {
 			var body = new JObject {
-        ["grant_type"] = "client_credentials",
         ["client_id"] = this.config.clientId,
-				["client_secret"] = this.config.clientSecret,
         ["scope"] = "openid"
 			};
+
+      if (String.IsNullOrEmpty(this.config.clientSecret)) {
+				body["username"] = this.config.email;
+				body["password"] = this.config.password;
+				body["grant_type"] = "password";
+			} else {
+				body["client_secret"] = this.config.clientSecret;
+				body["grant_type"] = "client_credentials";
+			}
+
 			var headers = new JObject {
-        ["Content-Type"] = "application/x-www-form-urlencoded"
+				["Content-Type"] = "application/x-www-form-urlencoded"
 			};
+
 			var options = new JObject();
 
 			options.Add("headers", headers);

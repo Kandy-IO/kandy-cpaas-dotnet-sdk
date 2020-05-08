@@ -14,7 +14,7 @@ namespace Cpaas.Sdk.Test {
     }
 
     [Test]
-    public void Constructor_Should_InitialzeUserId() {
+    public void Constructor_Should_InitializeUserId() {
       Assert.That(api.userId, Is.EqualTo(userId));
     }
 
