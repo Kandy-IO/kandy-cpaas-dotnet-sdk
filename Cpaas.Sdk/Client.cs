@@ -3,7 +3,7 @@
 namespace Cpaas.Sdk {
   /// \mainpage
   /// <summary>
-  /// Configure the SDK with clientId and clientSecret.
+  /// Configure the SDK with clientId, clientSecret or email/password.
   /// </summary>
   ///
   /// <example>
