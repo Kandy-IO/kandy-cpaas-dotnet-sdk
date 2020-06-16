@@ -56,7 +56,7 @@ namespace sms {
 
         var response = client.conversation.Subscribe(new Dictionary<string, string> {
           ["type"] = client.conversation.types.SMS,
-           ["webhookURL"] = sub.webhook,
+           ["webhookURL"] = sub.webhook + "/webhook",
            ["destinationAddress"] = Environment.GetEnvironmentVariable("PHONE_NUMBER")
          });
 
