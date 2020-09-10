@@ -5,7 +5,7 @@ using System.IdentityModel.Tokens.Jwt;
 
 namespace Cpaas.Sdk {
 	public class Api {
-		string version = "1.1.0";
+		string version = "1.1.1";
 		public Config config = null;
 		RestClient client = null;
 		string accessToken = null;
